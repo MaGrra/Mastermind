@@ -20,7 +20,7 @@ class Game
   end
 
   def play_guesser
-    puts "Enter the code!"11
+    puts "Enter the code!"
     players_guess
     loop do
       sleep(1)
@@ -44,7 +44,6 @@ class Game
     puts "\nGuess number:#{@rounds}\n\n"
     players_guess
     correct_match(move)
-    p computer.code
     @rounds += 1
     if code_solved? == true 
       break
